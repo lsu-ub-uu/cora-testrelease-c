@@ -25,15 +25,14 @@
 
 	<properties>
 		<testrelease.a.version>23.31-SNAPSHOT</testrelease.a.version>
-		<testrelease.b.version>1.0-SNAPSHOT</testrelease.b.version>
 	</properties>
 
 	<scm>
 		<connection>scm:git:https://{username}:{password}@github.com/lsu-ub-uu/cora-testrelease-c.git</connection>
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/cora-testrelease-c.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/cora-testrelease-c.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -46,11 +45,6 @@
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>testrelease-a</artifactId>
 			<version>${testrelease.a.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>testrelease-b</artifactId>
-			<version>${testrelease.b.version}</version>
 		</dependency>
 	</dependencies>
 </project>
