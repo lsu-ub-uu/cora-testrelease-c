@@ -17,20 +17,22 @@
 		<version>2.0.0</version>
 	</parent>
 
-	<artifactId>testrelease</artifactId>
-	<version>23.31-SNAPSHOT</version>
+	<artifactId>testrelease-c</artifactId>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>testrelease</name>
+	<name>testrelease-c</name>
 
 	<properties>
+		<testrelease.a.version>23.31-SNAPSHOT</testrelease.a.version>
+		<testrelease.b.version>1.0-SNAPSHOT</testrelease.b.version>
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://{username}:{password}@github.com/lsu-ub-uu/cora-testrelease.git</connection>
-		<developerConnection>scm:git:https://github.com/lsu-ub-uu/cora-testrelease.git</developerConnection>
-		<url>https://github.com/lsu-ub-uu/cora-testrelease.git</url>
-	  <tag>release/7.1</tag>
+		<connection>scm:git:https://{username}:{password}@github.com/lsu-ub-uu/cora-testrelease-c.git</connection>
+		<developerConnection>scm:git:https://github.com/lsu-ub-uu/cora-testrelease-c.git</developerConnection>
+		<url>https://github.com/lsu-ub-uu/cora-testrelease-c.git</url>
+	  <tag>HEAD</tag>
   </scm>
 
 	<dependencies>
@@ -39,6 +41,16 @@
 			<artifactId>testng</artifactId>
 			<version>${testng.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>testrelease-a</artifactId>
+			<version>${testrelease.a.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>testrelease-b</artifactId>
+			<version>${testrelease.b.version}</version>
 		</dependency>
 	</dependencies>
 </project>
